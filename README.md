@@ -15,3 +15,7 @@ An API for retrieving Minecraft player information, skins, and capes.
 - `/api/user/:identifier/capes` - Get player's capes
 - `/api/user/:identifier/skins` - Get player's skins
 - `/api/capes` - List all known Minecraft capes
+<<<<<<< HEAD
+=======
+
+>>>>>>> d8dd0db2c6428e898f0594344002c0cf047ef7a0
