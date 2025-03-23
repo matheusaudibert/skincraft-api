@@ -1,0 +1,250 @@
+{
+  "totalCapes": 35,
+  "capes": [
+    {
+      "name": "Migrator",
+      "hash": "5b37a01fde6a3e075f3bc5694c18e667",
+      "image": "https://skin.laby.net/api/render/cape/5b37a01fde6a3e075f3bc5694c18e667.png?shadow=true",
+      "description": "This cape is given to players who have bought Minecraft before December 1, 2020 and migrated their Mojang or legacy account to the new Microsoft account system.",
+      "link": "https://laby.net/cape/5b37a01fde6a3e075f3bc5694c18e667"
+    },
+    {
+      "name": "15th Anniversary",
+      "hash": "e7447a28eb5d03b01dee9f6710937eb2",
+      "image": "https://skin.laby.net/api/render/cape/e7447a28eb5d03b01dee9f6710937eb2.png?shadow=true",
+      "description": "The 15th Anniversary Cape was awarded to all players who claimed it on the [Minecraft website](https://www.minecraft.net/en-us/15th-anniversary?utm_source=labynet#MC_Anniversary_Cape) during the 15th anniversary of Minecraft. (Started at 2024-05-18 17:00 CET)",
+      "link": "https://laby.net/cape/e7447a28eb5d03b01dee9f6710937eb2"
+    },
+    {
+      "name": "Vanilla",
+      "hash": "21c9cf811d476ae1c4e58f3cceace025",
+      "image": "https://skin.laby.net/api/render/cape/21c9cf811d476ae1c4e58f3cceace025.png?shadow=true",
+      "description": "This cape is given out to players who bought both Java Edition and Bedrock Edition for Windows before June 6, 2022 and can be equipped in both editions.",
+      "link": "https://laby.net/cape/21c9cf811d476ae1c4e58f3cceace025"
+    },
+    {
+      "name": "Cherry Blossom",
+      "hash": "b4acb3ba0ca9d89e996928e21fad42c5",
+      "image": "https://skin.laby.net/api/render/cape/b4acb3ba0ca9d89e996928e21fad42c5.png?shadow=true",
+      "description": "The Cherry Blossom Cape was awarded to all players who participated in the Mob Voting 2023",
+      "link": "https://laby.net/cape/b4acb3ba0ca9d89e996928e21fad42c5"
+    },
+    {
+      "name": "Purple Heart",
+      "hash": "bfd10540b531afbcbec285293d17b358",
+      "image": "https://skin.laby.net/api/render/cape/bfd10540b531afbcbec285293d17b358.png?shadow=true",
+      "description": "This cape is an exclusive Twitch themed Character Creator cape obtained by redeeming a code on minecraft redeem page as part of the 15th Minecraft Anniversary event. It is possible to get a Twitch Drop code for this cape from May 15, 2024 to May 30, 2024 by watching a livestream in the Minecraft category with Drops enabled for at least 15 minutes. This cape can be redeemed until June 30, 2024.",
+      "link": "https://laby.net/cape/bfd10540b531afbcbec285293d17b358"
+    },
+    {
+      "name": "Follower's",
+      "hash": "719f820d513dc22f5f788a46e8ea3aa7",
+      "image": "https://skin.laby.net/api/render/cape/719f820d513dc22f5f788a46e8ea3aa7.png?shadow=true",
+      "description": "This cape is an exclusive TikTok themed Character Creator cape obtained by redeeming a code on minecraft redeem page as part of the 15th Minecraft Anniversary event. It is possible to get a TikTok Reward code for this cape from May 15, 2024 to May 30, 2024 by watching a livestream in the Minecraft category with rewards enabled and typing Minecraft in the chat. This cape can be redeemed until June 30, 2024.",
+      "link": "https://laby.net/cape/719f820d513dc22f5f788a46e8ea3aa7"
+    },
+    {
+      "name": "Mojang Office",
+      "hash": "9af295341c025102c2d9a51b695bd0c4",
+      "image": "https://skin.laby.net/api/render/cape/9af295341c025102c2d9a51b695bd0c4.png?shadow=true",
+      "description": "The texture was leaked on November 25, 2024, on Minecraft's redeem website as 'Buy a cape, get a cape' with the name 'Eyeblossom Cape' but was quickly removed. Purchasing a Creeper Cape by December 7, 2024, would initially grant a code for the cape. On December 9, 2024, Mojang announced the Eerie Mojang Office Party event, reusing the Eyeblossom cape's texture for the 'Mojang Office' cape which could be earned by completing five daily challenges. It is cross-platform and was added to the Java Edition back-end on December 7, 2024.",
+      "link": "https://laby.net/cape/9af295341c025102c2d9a51b695bd0c4"
+    },
+    {
+      "name": "MCC 15th Year",
+      "hash": "5ca285a4bba6c769dff12453b8084235",
+      "image": "https://skin.laby.net/api/render/cape/5ca285a4bba6c769dff12453b8084235.png?shadow=true",
+      "description": "Given to players who completed the 15 challenges in the MC Championship Mini-games Event server. The event started on July 22, 2024. 10 of the challenges require the player to reach certain statistics in mini-games, and 4 were for completing each of the mini-games. The remaining challenge is the Mystery Cave which are 7 different tasks that are hinted at from cave drawings. Starting from July 22, 2024, a new task was revealed every day, making the cape obtainable from July 28, 2024 to August 5, 2024. Although it was initially planned to be exclusive to Bedrock Edition, it was later announced that it would also be available for Java Edition starting August 5, 2024.",
+      "link": "https://laby.net/cape/5ca285a4bba6c769dff12453b8084235"
+    },
+    {
+      "name": "Menace",
+      "hash": "b69d6840faf88dadc57da2633aed0835",
+      "image": "https://skin.laby.net/api/render/cape/b69d6840faf88dadc57da2633aed0835.png?shadow=true",
+      "description": "The first promotional cape for A Minecraft Movie is available to players who [redeem](https://www.minecraft.net/en-us/redeem#movie-cape) a code before the film's release. To obtain a redeemable code, users must watch a [Minecraft](https://www.tiktok.com/live/gaming/Minecraft) livestream  on TikTok for at least three minutes. This event began on March 18, 2025, and will run until April 8, 2025.",
+      "link": "https://laby.net/cape/b69d6840faf88dadc57da2633aed0835"
+    },
+    {
+      "name": "Home",
+      "hash": "7f4224b74be5756a78973d2621f85566",
+      "image": "https://skin.laby.net/api/render/cape/7f4224b74be5756a78973d2621f85566.png?shadow=true",
+      "description": "The second promotional cape for A Minecraft Movie is available to players who [reedem](https://www.minecraft.net/en-us/redeem#movie-cape) a code before the film's release. Users can earn a Twitch Drop code for the cape by watching any [Minecraft](https://www.twitch.tv/directory/category/minecraft) streamer with Drops enabled for at least three minutes. This Drop was launched on March 18, 2025, and will be available until April 8, 2025.",
+      "link": "https://laby.net/cape/7f4224b74be5756a78973d2621f85566"
+    },
+    {
+      "name": "Minecraft Experience",
+      "hash": "1025a532853c7a29518ffaedda0621d2",
+      "image": "https://skin.laby.net/api/render/cape/1025a532853c7a29518ffaedda0621d2.png?shadow=true",
+      "description": "This cape is a reward for validating your ticket in person at the [Minecraft Experience](https://minecraftexperience.com): Villager Rescue event, then redeeming the code sent to your email via the minecraft.net redeem page. It started rolling out on October 23, 2024, five days after the event began. This is the second version of this cape. The [first version](https://laby.net/cape/a15a3a6c76c7554123c4b64c6c36b3ab) had a missing Elytra texture. All players who received the previous version were migrated to the new one on October 25, 2024.",
+      "link": "https://laby.net/cape/1025a532853c7a29518ffaedda0621d2"
+    },
+    {
+      "name": "MineCon 2016",
+      "hash": "de4a8ad0267f4fc0f41a732ebcf10ec9",
+      "image": "https://skin.laby.net/api/render/cape/de4a8ad0267f4fc0f41a732ebcf10ec9.png?shadow=true",
+      "description": "This cape was given to all players who attended MINECON 2016. A redemption link was emailed to all MINECON 2016 attendees who scanned their ticket at the entrance on September 24, 2016.",
+      "link": "https://laby.net/cape/de4a8ad0267f4fc0f41a732ebcf10ec9"
+    },
+    {
+      "name": "MineCon 2013",
+      "hash": "37cd76a8a0879233398d127099326cb7",
+      "image": "https://skin.laby.net/api/render/cape/37cd76a8a0879233398d127099326cb7.png?shadow=true",
+      "description": "On October 30, 2013 Tobias Mollstam of the Mojang Team tweeted out an image of the 2013 MINECON cape. The cape shows an extended piston on a green shaded background. A redemption link for this cape was emailed to all registered MINECON 2013 attendees, similar to MINECON 2012's method.",
+      "link": "https://laby.net/cape/37cd76a8a0879233398d127099326cb7"
+    },
+    {
+      "name": "MineCon 2015",
+      "hash": "4d1709d6e62c99ec7220e0787df0362e",
+      "image": "https://skin.laby.net/api/render/cape/4d1709d6e62c99ec7220e0787df0362e.png?shadow=true",
+      "description": "Unlike previous events, this cape was available on the Console Edition from July 1 to 15. A redemption link for this cape was emailed to all MINECON 2015 attendees who scanned their ticket at the entrance on July 4, 2015.",
+      "link": "https://laby.net/cape/4d1709d6e62c99ec7220e0787df0362e"
+    },
+    {
+      "name": "MineCon 2012",
+      "hash": "2b7ccdbfd1d89520f335822140d83d52",
+      "image": "https://skin.laby.net/api/render/cape/2b7ccdbfd1d89520f335822140d83d52.png?shadow=true",
+      "description": "A redemption link for this cape was emailed to all registered MINECON 2012 attendees.",
+      "link": "https://laby.net/cape/2b7ccdbfd1d89520f335822140d83d52"
+    },
+    {
+      "name": "MineCon 2011",
+      "hash": "00f15c80c9ab3540477210d4e58af337",
+      "image": "https://skin.laby.net/api/render/cape/00f15c80c9ab3540477210d4e58af337.png?shadow=true",
+      "description": "This cape was automatically added to all MINECON 2011 attendees' registered username.",
+      "link": "https://laby.net/cape/00f15c80c9ab3540477210d4e58af337"
+    },
+    {
+      "name": "Realms Mapmaker",
+      "hash": "492d8392bf27b659897752dca6de7778",
+      "image": "https://skin.laby.net/api/render/cape/492d8392bf27b659897752dca6de7778.png?shadow=true",
+      "description": "This cape was given to mapmakers who have followed special criteria.",
+      "link": "https://laby.net/cape/492d8392bf27b659897752dca6de7778"
+    },
+    {
+      "name": "Mojang",
+      "hash": "6390c54ca1e541a75235dadf23555ed2",
+      "image": "https://skin.laby.net/api/render/cape/6390c54ca1e541a75235dadf23555ed2.png?shadow=true",
+      "description": "Some employees of Mojang Studios have this cape. This design has been used since October 7, 2015.",
+      "link": "https://laby.net/cape/6390c54ca1e541a75235dadf23555ed2"
+    },
+    {
+      "name": "Mojang Studios",
+      "hash": "8fb7780634ea6c0729fea7a7e6f50c28",
+      "image": "https://skin.laby.net/api/render/cape/8fb7780634ea6c0729fea7a7e6f50c28.png?shadow=true",
+      "description": "The cape's design resembles the 'Mojangs' or the 'gadgets' that make up the Mojang Studios Logo.",
+      "link": "https://laby.net/cape/8fb7780634ea6c0729fea7a7e6f50c28"
+    },
+    {
+      "name": "Translator",
+      "hash": "a944bd437bb6d12822f740c55ee1a3c9",
+      "image": "https://skin.laby.net/api/render/cape/a944bd437bb6d12822f740c55ee1a3c9.png?shadow=true",
+      "description": "This cape is given to translators on the Minecraft translation project at Crowdin. Originally, these capes were given out using a fair dice roll to 29 translators, with plans to give more capes to translators from time to time. Jeb later said that he canceled those plans after seeing abusive behavior from some translators like using auto-translation and down-voting legitimate translations. As of May 7, 2016, it appears these plans have resumed.",
+      "link": "https://laby.net/cape/a944bd437bb6d12822f740c55ee1a3c9"
+    },
+    {
+      "name": "Mojira Moderator",
+      "hash": "172e4e9fd6c0afdf086b8bdb58c0bad5",
+      "image": "https://skin.laby.net/api/render/cape/172e4e9fd6c0afdf086b8bdb58c0bad5.png?shadow=true",
+      "description": "This cape was given to bug tracker moderators on December 25, 2014, and again from May 9, 2016 onward.",
+      "link": "https://laby.net/cape/172e4e9fd6c0afdf086b8bdb58c0bad5"
+    },
+    {
+      "name": "Mojang Classic",
+      "hash": "7c07865bdc148efb0d1eb95829eaf11a",
+      "image": "https://skin.laby.net/api/render/cape/7c07865bdc148efb0d1eb95829eaf11a.png?shadow=true",
+      "description": "Erro ao obter descrição",
+      "link": "https://laby.net/cape/7c07865bdc148efb0d1eb95829eaf11a"
+    },
+    {
+      "name": "Cobalt",
+      "hash": "bd64503808bc49c8d80e327754894d4f",
+      "image": "https://skin.laby.net/api/render/cape/bd64503808bc49c8d80e327754894d4f.png?shadow=true",
+      "description": "Given out only to participants/winners of level-making competitions and the Cobalt League tournaments. The design of this cape's elytron texture is based on a wasp enemy from Cobalt.",
+      "link": "https://laby.net/cape/bd64503808bc49c8d80e327754894d4f"
+    },
+    {
+      "name": "Scrolls",
+      "hash": "1044b1f5dfc2626b573d8d74a9307a7f",
+      "image": "https://skin.laby.net/api/render/cape/1044b1f5dfc2626b573d8d74a9307a7f.png?shadow=true",
+      "description": "On November 7, 2014, it was announced that there was a new Scrolls cape. Players who earned the Weekly First Place winner badge five times were given access to the cape. There are only ten users with this cape. On December 11 & 12, 2014, all users were shown with this scrolls cape to celebrate the release of Scrolls. On Minecon 2015, Scrolls Minecon Open was held for Scrolls' ingame items and other prizes including Scrolls cape. As of September 30, 2015, it is no longer possible to earn this cape. This cape was later removed and only the people who won the competition have the cape.",
+      "link": "https://laby.net/cape/1044b1f5dfc2626b573d8d74a9307a7f"
+    },
+    {
+      "name": "Translator (Chinese)",
+      "hash": "a2b113cab4c553b9b306f25e2d599513",
+      "image": "https://skin.laby.net/api/render/cape/a2b113cab4c553b9b306f25e2d599513.png?shadow=true",
+      "description": "This cape was given to [@powup333](https://laby.net/@powup333), [@Craft_Lawrence](https://laby.net/@Craft_Lawrence) and [@sjjklh](https://laby.net/@sjjklh) on June 4, 2015 for playing vital roles on Crowdin Translation Project in Chinese. The cape is identical to the Crowdin cape except for the pixelated Chinese flag on the under side of the cape. This cape shares similar design style with [@cheapsh0t](https://laby.net/@cheapsh0t)'s Cape.",
+      "link": "https://laby.net/cape/a2b113cab4c553b9b306f25e2d599513"
+    },
+    {
+      "name": "Valentine",
+      "hash": "bfa8cc9d7af57fd856890af7c2bf2a4a",
+      "image": "https://skin.laby.net/api/render/cape/bfa8cc9d7af57fd856890af7c2bf2a4a.png?shadow=true",
+      "description": "This cape was given to [@LolFoxy2](https://laby.net/@LolFoxy2) by the Mojang employee [@Ekkelangelo](https://laby.net/@Ekkelangelo) after resolving LolFoxy2's problems with Migration. It was shortly removed from their account after the Mojang employee realizing the cape's rarity. On the 24th of January 2023 it was also discovered for a short time on the account [@JoinGrave](https://laby.net/@JoinGrave).",
+      "link": "https://laby.net/cape/bfa8cc9d7af57fd856890af7c2bf2a4a"
+    },
+    {
+      "name": "Turtle",
+      "hash": "22923c6efb6deee96bd7ecd87086bbb8",
+      "image": "https://skin.laby.net/api/render/cape/22923c6efb6deee96bd7ecd87086bbb8.png?shadow=true",
+      "description": "This cape was given to [@billyK_](https://laby.net/@billyK_) for his suggestion to add turtles into the game.",
+      "link": "https://laby.net/cape/22923c6efb6deee96bd7ecd87086bbb8"
+    },
+    {
+      "name": "Test",
+      "hash": "c7091e237e7562e73990a97dda5bc554",
+      "image": "https://skin.laby.net/api/render/cape/c7091e237e7562e73990a97dda5bc554.png?shadow=true",
+      "description": "[@etanaratsastaja](https://laby.net/@etanaratsastaja) created and equipped this cape in production for testing purposes. Even though it looks similar to the Sniffer texture, he claimed that he painted it with random colors.",
+      "link": "https://laby.net/cape/c7091e237e7562e73990a97dda5bc554"
+    },
+    {
+      "name": "Birthday",
+      "hash": "04ddcbd316ec68364238697174fb1c61",
+      "image": "https://skin.laby.net/api/render/cape/04ddcbd316ec68364238697174fb1c61.png?shadow=true",
+      "description": "This cape was given to [@Gr8Bizzo](https://laby.net/@Gr8Bizzo). The account is owned by a Mojang employee leading the work on minecraft.net. It was later discovered on the profile [@NoobyToBe74](https://laby.net/@NoobyToBe74) but the reason is unknown.",
+      "link": "https://laby.net/cape/04ddcbd316ec68364238697174fb1c61"
+    },
+    {
+      "name": "Translator (Japanese)",
+      "hash": "008daa52d7b3e61b686f7cafa3680c0f",
+      "image": "https://skin.laby.net/api/render/cape/008daa52d7b3e61b686f7cafa3680c0f.png?shadow=true",
+      "description": "This cape was given to [@cheapsh0t](https://laby.net/@cheapsh0t) on October 2013 for helping the Mojang team in Tokyo. The cape is identical to the Crowdin cape except for the Japanese flag on the under side of the cape.",
+      "link": "https://laby.net/cape/008daa52d7b3e61b686f7cafa3680c0f"
+    },
+    {
+      "name": "Spade",
+      "hash": "f0b8db3ae2d2857c6d262fcbc2aa4737",
+      "image": "https://skin.laby.net/api/render/cape/f0b8db3ae2d2857c6d262fcbc2aa4737.png?shadow=true",
+      "description": "This cape was given to [@MrMessiah](https://laby.net/@MrMessiah) as a 'thank you' for creating the BetterLight mod, which is responsible for some of Minecraft's lighting and grass features. The cape was discussed in 2011, however it wasn't granted until 2015. The designer of the cape is uncertain but MrMessiah believes it was Jeb.",
+      "link": "https://laby.net/cape/f0b8db3ae2d2857c6d262fcbc2aa4737"
+    },
+    {
+      "name": "Snowman",
+      "hash": "6206c2b3261ba9b033aae57e32121a86",
+      "image": "https://skin.laby.net/api/render/cape/6206c2b3261ba9b033aae57e32121a86.png?shadow=true",
+      "description": "This cape was given to [@JulianClark](https://laby.net/@JulianClark) in return for bringing [@Notch](https://laby.net/@Notch) the TV presenter and actor Ray Cokes.",
+      "link": "https://laby.net/cape/6206c2b3261ba9b033aae57e32121a86"
+    },
+    {
+      "name": "Millionth Customer",
+      "hash": "47d30b5dd95e65e696fc9ff186d8ee33",
+      "image": "https://skin.laby.net/api/render/cape/47d30b5dd95e65e696fc9ff186d8ee33.png?shadow=true",
+      "description": "This cape was given to [@akronman1](https://laby.net/@akronman1), the lucky buyer of the 1,000,000th copy of Minecraft.",
+      "link": "https://laby.net/cape/47d30b5dd95e65e696fc9ff186d8ee33"
+    },
+    {
+      "name": "dB",
+      "hash": "e71149cdca1d763faf5d4549edc0620b",
+      "image": "https://skin.laby.net/api/render/cape/e71149cdca1d763faf5d4549edc0620b.png?shadow=true",
+      "description": "This cape was given to [@Debuggg](https://laby.net/@Debuggg), a video game music composer, as [@Notch](https://laby.net/@Notch) was a fan of his music.",
+      "link": "https://laby.net/cape/e71149cdca1d763faf5d4549edc0620b"
+    },
+    {
+      "name": "Prismarine",
+      "hash": "b32d8c1671c2936e81ec7e711e2af8e4",
+      "image": "https://skin.laby.net/api/render/cape/b32d8c1671c2936e81ec7e711e2af8e4.png?shadow=true",
+      "description": "This cape was given to [@Drullkus](https://laby.net/@Drullkus) for recreating the prismarine block for use in his Chisel mod rather than modifying Mojang's texture. Jeb had this cape made before reaching out to Drullkus but it had no owner. Before this cape was given to Drullkus, [@KrisJelbring](https://laby.net/@KrisJelbring) had it on his account but it was later removed.",
+      "link": "https://laby.net/cape/b32d8c1671c2936e81ec7e711e2af8e4"
+    }
+  ]
+}
