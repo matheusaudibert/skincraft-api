@@ -159,6 +159,89 @@
             </p>
           </div>
 
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/names/:length</h3>
+            <p>Get soon-to-be-available Minecraft names by character length</p>
+            <p><strong>Parameters:</strong></p>
+            <ul>
+              <li><code>length</code> - Number of characters (3-16)</li>
+            </ul>
+            <p>
+              <strong>Response:</strong> List of upcoming available names with
+              availability dates and OG status
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/name/:username</h3>
+            <p>
+              Check if a specific Minecraft username is available or when it
+              will become available
+            </p>
+            <p><strong>Parameters:</strong></p>
+            <ul>
+              <li><code>username</code> - The Minecraft username to check</li>
+            </ul>
+            <p>
+              <strong>Response:</strong> Information about username availability
+              and release date (if applicable)
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/names</h3>
+            <p>Get soon-to-be-available Minecraft names (first 10)</p>
+            <p>
+              <strong>Response:</strong> List of upcoming available names with
+              availability dates and OG status
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/skins/latest</h3>
+            <p>Get the latest Minecraft skins uploaded by players</p>
+            <p>
+              <strong>Response:</strong> List of the 6 most recent skins with
+              player names and skin IDs
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/skins/random</h3>
+            <p>Get random Minecraft skins</p>
+            <p>
+              <strong>Response:</strong> List of randomly selected Minecraft
+              skins with their IDs
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/skins/daily</h3>
+            <p>Get daily trending Minecraft skins</p>
+            <p>
+              <strong>Response:</strong> List of trending skins with player
+              names (if available), skin IDs, and popularity counts
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/skins/weekly</h3>
+            <p>Get weekly trending Minecraft skins</p>
+            <p>
+              <strong>Response:</strong> List of trending skins with player
+              names (if available), skin IDs, and popularity counts
+            </p>
+          </div>
+
+          <div class="endpoint">
+            <h3><span class="method">GET</span> /api/skins/monthly</h3>
+            <p>Get monthly trending Minecraft skins</p>
+            <p>
+              <strong>Response:</strong> List of trending skins with player
+              names (if available), skin IDs, and popularity counts
+            </p>
+          </div>
+
           <h2 id="examples" class="mt-5">Usage Examples</h2>
 
           <h3>Fetch a player profile</h3>
@@ -182,6 +265,78 @@ fetch('https://skincraft-api.vercel.app/api/user/Notch/capes')
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
                 </code></pre>
+
+          <h3>Get available names</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/names/4')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Check username availability</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/name/Dream')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get all upcoming available names</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/names')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get latest skins</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skins/latest')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get a random skin</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skin/random')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get random skins</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skins/random')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get daily trending skins</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skins/daily')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get weekly trending skins</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skins/weekly')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
+
+          <h3>Get monthly trending skins</h3>
+          <pre class="code-block"><code class="language-javascript">
+fetch('https://skincraft-api.vercel.app/api/skins/monthly')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+</code></pre>
         </div>
 
         <div class="col-lg-4">

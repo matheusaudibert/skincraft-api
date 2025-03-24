@@ -20,7 +20,7 @@ const profileService = {
       const formattedProfile = {
         uuid: profileData.uuid,
         name: profileData.name,
-        pose: `https://starlightskins.lunareclipse.studio/render/walking/${profileData.uuid}/full?dropShadow=true`,
+        pose: `https://starlightskins.lunareclipse.studio/render/walking/${profileData.uuid}/full`,
         name_history: profileData.name_history.map((item) => ({
           name: item.name,
           changed_at: item.changed_at,
@@ -36,12 +36,12 @@ const profileService = {
         formattedProfile.textures.CAPES = formattedCapes;
       }
 
-      // Process skins and add to response
+      // Process skins and add to response with the key "SKINS" instead of "SKIN"
       const formattedSkins = await this.formatSkins(
         profileData.textures.SKIN || []
       );
       if (formattedSkins.length > 0) {
-        formattedProfile.textures.SKIN = formattedSkins;
+        formattedProfile.textures.SKINS = formattedSkins;
       }
 
       return formattedProfile;
