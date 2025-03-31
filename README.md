@@ -1,76 +1,91 @@
 # SkinCraft API
 
-An API for retrieving Minecraft player information, skins, and capes.
+Uma API para recuperar informações de jogadores do Minecraft, skins e capas.
 
-## Features
+## Funcionalidades
 
-- Get player profiles including name history
-- View player skins with tags and usage statistics
-- Access player capes with detailed descriptions
-- Browse a complete database of Minecraft capes
+- Obter perfis de jogadores, incluindo histórico de nomes
+- Visualizar skins de jogadores com tags e estatísticas de uso
+- Acessar capas de jogadores com descrições detalhadas
+- Navegar em um banco de dados completo de capas do Minecraft
 
-## API Endpoints
+## Endpoints da API
 
-- `/api/user/:identifier/profile` - Get complete player profile
-- `/api/user/:identifier/capes` - Get player's capes
-- `/api/user/:identifier/skins` - Get player's skins
-- `/api/capes` - List all known Minecraft capes
+- `/api/user/:identifier/profile` - Obter perfil completo do jogador
+- `/api/user/:identifier/capes` - Obter capas do jogador
+- `/api/user/:identifier/skins` - Obter skins do jogador
+- `/api/capes` - Listar todas as capas conhecidas do Minecraft
+- `/api/names/:length` - Obter nomes que ficarão disponíveis em breve por tamanho
+- `/api/names` - Obter os 10 primeiros nomes que ficarão disponíveis em breve
+- `/api/name/:username` - Verificar disponibilidade de um nome específico
+- `/api/skins/latest` - Obter as skins mais recentes do Minecraft
+- `/api/skins/random` - Obter skins aleatórias do Minecraft
+- `/api/skins/daily` - Obter skins em tendência diária
+- `/api/skins/weekly` - Obter skins em tendência semanal
+- `/api/skins/monthly` - Obter skins em tendência mensal
 
-## Deployment on Vercel
+## Implantação no Heroku
 
-### Prerequisites
+### Pré-requisitos
 
-- A [GitHub](https://github.com) account
-- A [Vercel](https://vercel.com) account (can be created with GitHub)
-- [Git](https://git-scm.com) installed locally
+- Uma conta no [Heroku](https://heroku.com)
+- [Git](https://git-scm.com) instalado localmente
+- [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) instalado
 
-### Deployment Steps
+### Passos para implantação
 
-1. Create a new repository on GitHub and push your code:
+1. Faça login no Heroku CLI:
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/skincraft-api.git
-git push -u origin main
+heroku login
 ```
 
-2. Go to [Vercel Dashboard](https://vercel.com/dashboard)
-
-3. Click "Add New" > "Project"
-
-4. Import your GitHub repository
-
-5. Configure the project:
-
-   - Framework Preset: Node.js
-   - Root Directory: ./
-   - Build Command: npm run vercel-build
-   - Output Directory: public
-   - Install Command: npm install
-
-6. Click "Deploy"
-
-## Development
-
-### Local Setup
+2. Crie um novo aplicativo Heroku:
 
 ```bash
-# Install dependencies
+heroku create skincraft-api
+```
+
+3. Adicione buildpack para suporte ao Puppeteer (necessário para web scraping):
+
+```bash
+heroku buildpacks:add https://github.com/jontewks/puppeteer-heroku-buildpack
+heroku buildpacks:add heroku/nodejs
+```
+
+4. Faça deploy do código:
+
+```bash
+git add .
+git commit -m "Ready for Heroku deployment"
+git push heroku main
+```
+
+5. Abra o aplicativo:
+
+```bash
+heroku open
+```
+
+## Desenvolvimento
+
+### Configuração Local
+
+```bash
+# Instalar dependências
 npm install
 
-# Run in development mode
+# Executar em modo de desenvolvimento
 npm run dev
 
-# Run in production mode
+# Executar em modo de produção
 npm start
 ```
 
-### Environment Variables
+### Variáveis de Ambiente
 
-No environment variables are required for basic operation.
+Nenhuma variável de ambiente é necessária para operação básica.
 
-## License
+## Licença
 
 MIT
