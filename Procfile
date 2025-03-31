@@ -1,1 +1,1 @@
-web: CHROME_PATH=/app/.apt/usr/bin/google-chrome node index.js
+web: node index.js

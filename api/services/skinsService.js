@@ -12,33 +12,74 @@ const skinsService = {
     const isHeroku = process.env.DYNO;
     let browser;
 
-    if (isHeroku) {
-      // For Heroku, use the Chrome binary installed by the buildpack
-      browser = await puppeteer.launch({
-        headless: true,
-        args: [
+    try {
+      if (isHeroku) {
+        // For Heroku, try different potential Chrome paths
+        const possiblePaths = [
+          process.env.CHROME_PATH || "/app/.apt/usr/bin/google-chrome",
+          "/app/.apt/opt/google/chrome/chrome",
+          "/app/.apt/usr/bin/chromium-browser",
+          "/app/.chrome/bin/chrome",
+        ];
+
+        let chromePath;
+        for (const path of possiblePaths) {
+          try {
+            if (require("fs").existsSync(path)) {
+              chromePath = path;
+              console.log(`Found Chrome at: ${chromePath}`);
+              break;
+            }
+          } catch (e) {
+            // Skip if path check fails
+          }
+        }
+
+        if (!chromePath) {
+          console.warn(
+            "Chrome binary not found in expected locations, using default"
+          );
+          chromePath = "/app/.apt/usr/bin/google-chrome";
+        }
+
+        console.log("Launching browser with args:", [
           "--no-sandbox",
           "--disable-setuid-sandbox",
           "--disable-gpu",
           "--disable-dev-shm-usage",
-        ],
-        executablePath: "/app/.apt/usr/bin/google-chrome",
-      });
-    } else {
-      // For local development, assume Chrome is installed at standard location
-      browser = await puppeteer.launch({
-        headless: "new",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-        executablePath:
-          process.platform === "win32"
-            ? "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-            : process.platform === "darwin"
-            ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-            : "/usr/bin/google-chrome",
-      });
-    }
+          "--single-process",
+        ]);
 
-    return browser;
+        browser = await puppeteer.launch({
+          headless: true,
+          args: [
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+            "--disable-gpu",
+            "--disable-dev-shm-usage",
+            "--single-process",
+          ],
+          executablePath: chromePath,
+        });
+      } else {
+        // For local development, assume Chrome is installed at standard location
+        browser = await puppeteer.launch({
+          headless: "new",
+          args: ["--no-sandbox", "--disable-setuid-sandbox"],
+          executablePath:
+            process.platform === "win32"
+              ? "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+              : process.platform === "darwin"
+              ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+              : "/usr/bin/google-chrome",
+        });
+      }
+
+      return browser;
+    } catch (error) {
+      console.error("Error launching browser:", error);
+      throw error;
+    }
   },
 
   /**

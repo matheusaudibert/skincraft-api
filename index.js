@@ -45,6 +45,38 @@ app.get("/api", (req, res) => {
         path: "/api/capes",
         description: "List all available Minecraft capes",
       },
+      {
+        path: "/api/names",
+        description: "Get soon-to-be-available Minecraft names (first 10)",
+      },
+      {
+        path: "/api/names/:length",
+        description: "Get soon-to-be-available Minecraft names by length",
+      },
+      {
+        path: "/api/name/:username",
+        description: "Check if a specific Minecraft username is available",
+      },
+      {
+        path: "/api/skins/latest",
+        description: "Get the latest Minecraft skins",
+      },
+      {
+        path: "/api/skins/random",
+        description: "Get random Minecraft skins",
+      },
+      {
+        path: "/api/skins/daily",
+        description: "Get daily trending Minecraft skins",
+      },
+      {
+        path: "/api/skins/weekly",
+        description: "Get weekly trending Minecraft skins",
+      },
+      {
+        path: "/api/skins/monthly",
+        description: "Get monthly trending Minecraft skins",
+      },
     ],
   });
 });
@@ -62,6 +94,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
-// Export the Express API for Vercel
-module.exports = app;
