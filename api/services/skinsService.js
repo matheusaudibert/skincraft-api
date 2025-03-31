@@ -1,9 +1,46 @@
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 
 /**
  * Service for retrieving Minecraft skin information
  */
 const skinsService = {
+  /**
+   * Launch browser with correct configuration for the environment
+   */
+  async launchBrowser() {
+    // Determine if we're running on Heroku
+    const isHeroku = process.env.DYNO;
+    let browser;
+
+    if (isHeroku) {
+      // For Heroku, use the Chrome binary installed by the buildpack
+      browser = await puppeteer.launch({
+        headless: true,
+        args: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+          "--disable-gpu",
+          "--disable-dev-shm-usage",
+        ],
+        executablePath: "/app/.apt/usr/bin/google-chrome",
+      });
+    } else {
+      // For local development, assume Chrome is installed at standard location
+      browser = await puppeteer.launch({
+        headless: "new",
+        args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        executablePath:
+          process.platform === "win32"
+            ? "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+            : process.platform === "darwin"
+            ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+            : "/usr/bin/google-chrome",
+      });
+    }
+
+    return browser;
+  },
+
   /**
    * Get the latest Minecraft skins from NameMC
    */
@@ -11,10 +48,7 @@ const skinsService = {
     let browser = null;
 
     try {
-      browser = await puppeteer.launch({
-        headless: "new",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-      });
+      browser = await this.launchBrowser();
 
       const page = await browser.newPage();
 
@@ -103,10 +137,7 @@ const skinsService = {
     let browser = null;
 
     try {
-      browser = await puppeteer.launch({
-        headless: "new",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-      });
+      browser = await this.launchBrowser();
 
       const page = await browser.newPage();
 
@@ -202,10 +233,7 @@ const skinsService = {
     let browser = null;
 
     try {
-      browser = await puppeteer.launch({
-        headless: "new",
-        args: ["--no-sandbox", "--disable-setuid-sandbox"],
-      });
+      browser = await this.launchBrowser();
 
       const page = await browser.newPage();
 

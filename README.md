@@ -46,11 +46,11 @@ heroku login
 heroku create skincraft-api
 ```
 
-3. Adicione buildpack para suporte ao Puppeteer (necessário para web scraping):
+3. Adicione os buildpacks necessários:
 
 ```bash
-heroku buildpacks:add https://github.com/jontewks/puppeteer-heroku-buildpack
-heroku buildpacks:add heroku/nodejs
+heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
+heroku buildpacks:add --index 2 heroku/nodejs
 ```
 
 4. Faça deploy do código:
