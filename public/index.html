@@ -197,70 +197,25 @@
             </p>
           </div>
 
-          <div class="endpoint">
-            <h3><span class="method">GET</span> /api/skins/latest</h3>
-            <p>Get the latest Minecraft skins uploaded by players</p>
-            <p>
-              <strong>Response:</strong> List of the 6 most recent skins with
-              player names and skin IDs
-            </p>
-          </div>
-
-          <div class="endpoint">
-            <h3><span class="method">GET</span> /api/skins/random</h3>
-            <p>Get random Minecraft skins</p>
-            <p>
-              <strong>Response:</strong> List of randomly selected Minecraft
-              skins with their IDs
-            </p>
-          </div>
-
-          <div class="endpoint">
-            <h3><span class="method">GET</span> /api/skins/daily</h3>
-            <p>Get daily trending Minecraft skins</p>
-            <p>
-              <strong>Response:</strong> List of trending skins with player
-              names (if available), skin IDs, and popularity counts
-            </p>
-          </div>
-
-          <div class="endpoint">
-            <h3><span class="method">GET</span> /api/skins/weekly</h3>
-            <p>Get weekly trending Minecraft skins</p>
-            <p>
-              <strong>Response:</strong> List of trending skins with player
-              names (if available), skin IDs, and popularity counts
-            </p>
-          </div>
-
-          <div class="endpoint">
-            <h3><span class="method">GET</span> /api/skins/monthly</h3>
-            <p>Get monthly trending Minecraft skins</p>
-            <p>
-              <strong>Response:</strong> List of trending skins with player
-              names (if available), skin IDs, and popularity counts
-            </p>
-          </div>
-
           <h2 id="examples" class="mt-5">Usage Examples</h2>
 
           <h3>Fetch a player profile</h3>
           <pre class="code-block"><code class="language-javascript">
 // Using fetch
-fetch('https://skincraft-api.herokuapp.com/api/user/Notch/profile')
+fetch('https://skincraft-api.vercel.app/api/user/Notch/profile')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
 
 // Using axios
-axios.get('https://skincraft-api.herokuapp.com/api/user/Notch/profile')
+axios.get('https://skincraft-api.vercel.app/api/user/Notch/profile')
   .then(response => console.log(response.data))
   .catch(error => console.error('Error:', error));
                 </code></pre>
 
           <h3>Get player capes</h3>
           <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/user/Notch/capes')
+fetch('https://skincraft-api.vercel.app/api/user/Notch/capes')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -268,7 +223,7 @@ fetch('https://skincraft-api.herokuapp.com/api/user/Notch/capes')
 
           <h3>Get available names</h3>
           <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/names/4')
+fetch('https://skincraft-api.vercel.app/api/names/4')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -276,7 +231,7 @@ fetch('https://skincraft-api.herokuapp.com/api/names/4')
 
           <h3>Check username availability</h3>
           <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/name/Dream')
+fetch('https://skincraft-api.vercel.app/api/name/Dream')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -284,55 +239,7 @@ fetch('https://skincraft-api.herokuapp.com/api/name/Dream')
 
           <h3>Get all upcoming available names</h3>
           <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/names')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get latest skins</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skins/latest')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get a random skin</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skin/random')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get random skins</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skins/random')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get daily trending skins</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skins/daily')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get weekly trending skins</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skins/weekly')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
-</code></pre>
-
-          <h3>Get monthly trending skins</h3>
-          <pre class="code-block"><code class="language-javascript">
-fetch('https://skincraft-api.herokuapp.com/api/skins/monthly')
+fetch('https://skincraft-api.vercel.app/api/names')
   .then(response => response.json())
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
@@ -350,7 +257,7 @@ fetch('https://skincraft-api.herokuapp.com/api/skins/monthly')
               <hr />
               <h5 class="card-title">API Base URL</h5>
               <p class="card-text">
-                <code>https://skincraft-api.herokuapp.com</code>
+                <code>https://skincraft-api.vercel.app</code>
               </p>
               <hr />
               <h5 class="card-title">Rate Limits</h5>
